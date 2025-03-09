@@ -1,0 +1,19 @@
+[package]
+name = "Rust-Practice"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+
+# This section tells Cargo that `part3.rs` is a separate binary executable.
+# By default, Cargo only recognizes `src/main.rs` as the main executable.
+# To run additional `.rs` files independently, we define them explicitly.
+
+[[bin]]
+name = "part3"   # The name of the binary, which you will use when running `cargo run --bin part3`
+path = "src/part3.rs"  # The location of the source file containing the main function for this binary
+
+
+[[bin]]
+name = "part1"
+path = "src/part1.rs"
