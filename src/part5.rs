@@ -1,4 +1,5 @@
-//These are Debug traits
+use serde::{Deserialize, Serialize};
+
 #[derive(Debug)]
 struct User {
   name : String,
